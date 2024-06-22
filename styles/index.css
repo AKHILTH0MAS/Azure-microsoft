@@ -1,3 +1,22 @@
-:root ul li body{
-    text-decoration: ;
+body,
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar-nav375 {
+  padding: 10px;
+  position: relative;
+}
+.items-flex {
+  display: flex;
+}
+.nav-logo {
+  width: 100px;
+  position: absolute;
+  left: 40%;
+}
+.nav-hamburger {
+  width: 20px;
 }
