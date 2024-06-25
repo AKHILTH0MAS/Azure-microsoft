@@ -6,17 +6,37 @@ li {
   margin: 0;
 }
 .navbar-nav375 {
-  padding: 10px;
-  position: relative;
+  padding: 18px 15px;
+  position: absolute;
 }
 .items-flex {
   display: flex;
 }
 .nav-logo {
   width: 100px;
-  position: absolute;
+  height: 22.5px;
+  position: relative;
   left: 40%;
+  padding: 10px;
 }
 .nav-hamburger {
   width: 20px;
+  height: 18px;
+  margin-right: 20px;
+}
+.nav-search {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* second viewport  540*/
+@media screen and (max-width: 539px) {
+}
+/* third viewport 860 */
+@media (min-width: 560px) and (max-width: 859px) {
+}
+@media screen and (min-width: 860px) {
+  .navbar-small {
+    display: none;
+  }
 }
