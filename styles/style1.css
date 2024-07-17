@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body,
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans";
+}
+
+.mobile-nav-child {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
+.menu-button img {
+  width: 20px;
+  height: 20px;
+}
+.menu-button {
+  padding: 6px 0 8px;
+  margin: 1px;
+  height: 48px;
+  width: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.search-icon img {
+  width: 16px;
+  height: 16px;
+}
+.search-icon {
+  width: 34px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.mobile-nav-logo img {
+  width: 108px;
+  padding: 12px 4px;
+}
+.mobile-nav {
+  position: relative;
+}
+.mobile-nav-logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 59px);
+}
+.des-nav {
+  display: none;
+}
+
+@media screen and (min-width: 860px) {
+  .mobile-nav {
+    display: none;
+  }
+  .des-nav {
+    display: block;
+  }
+  .des-nav-child {
+    display: flex;
+    padding: 0 24px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .des-nav-part-2 {
+    display: flex;
+  }
+
+  .des-nav-button span svg {
+    width: 15px;
+  }
+  .des-nav-logo {
+    margin-top: -3px;
+    width: 137px;
+    padding: 16px 6px 16px 10px;
+    box-sizing: border-box;
+  }
+  .des-nav-logo img {
+    width: 108px;
+  }
+  .des-nav-name {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: -3px;
+    padding: 16px 6px 16px 10px;
+    display: flex;
+    align-items: center;
+  }
+  .des-name-parent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .des-name-parent span {
+    width: 1px;
+    border-left: 2px solid #000;
+    height: 24px;
+    margin-left: 7px;
+    margin-top: -5px;
+    display: block;
+  }
+  .des-nav-text {
+    display: flex;
+    align-items: center;
+    padding: 16px 6px;
+    font-size: 13px;
+    font-weight: 400;
+    gap: 5px;
+  }
+  .des-nav-text span {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -5px;
+  }
+  .des-nav-text:nth-child(1) {
+    margin-left: 10px;
+  }
+  .des-nav-part-3 {
+    position: absolute;
+    right: 30px;
+    display: flex;
+  }
+  .search-icon img {
+    height: 16px;
+    width: 16px;
+  }
+  .search-icon {
+    width: 36px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: content;
+  }
+  .des-nav-part-3-two {
+    display: flex;
+  }
+  .des-nav-get-button {
+    display: flex;
+    align-items: center;
+    background: #0078d4;
+    color: #fff;
+    height: 31px;
+    margin: 11px 8px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  .des-nav-get-button span {
+    font-size: 13px;
+  }
+  .des-nav-sign-button span {
+    font-size: 13px;
+  }
+  .des-nav-sign-button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: #000;
+    height: 31px;
+    margin: 11px 8px;
+    padding: 0 8px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  .des-nav-part-3-two {
+    display: none;
+  }
+}
+@media screen and (min-width: 1084px) {
+  .des-nav-text:nth-child(n + 2) {
+    display: none;
+  }
+  .des-nav-text:last-child {
+    display: flex;
+  }
+  .des-nav-text-2 {
+    display: flex;
+    align-items: center;
+    padding: 16px 8px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .des-nav-part-3-two {
+    display: flex;
+  }
+  .des-nav-child {
+    padding: 0 5%;
+  }
+  .des-nav-part-3 {
+    right: 5%;
+  }
+}
+@media screen and (min-width: 1108px) {
+  .des-nav-text:nth-child(2) {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1205px) {
+  .des-nav-text:nth-child(3) {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1286px) {
+  .des-nav-text:nth-child(4) {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1376px) {
+  .des-nav-text:nth-child(5) {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1460px) {
+  .des-nav-text:nth-child(6) {
+    display: flex;
+  }
+  .des-nav-text:last-child {
+    display: none;
+  }
+}
