@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+@font-face {
+  font-family: "Seoge UI-Semibold";
+  src: url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/Semibold/latest.woff2);
+}
+@font-face {
+  font-family: "Seoge UI";
+  src: url(https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2);
+}
 body,
 ul,
-li {
+li,
+p {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-family: "Noto Sans";
+  font-family: "Seoge UI";
 }
 
 .mobile-nav-child {
@@ -30,7 +39,7 @@ li {
 }
 .search-icon img {
   width: 16px;
-  height: 16px;
+  height: 18px;
 }
 .search-icon {
   width: 34px;
@@ -56,6 +65,333 @@ li {
   display: none;
 }
 
+/* nav ends here  */
+
+.azure-bar {
+  height: 34px;
+  padding: 0 16px;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+}
+.azure-bar p {
+  padding-top: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Seoge UI-Semibold";
+}
+.azure-bar span {
+  font-size: 22px;
+  font-weight: 500;
+  padding-left: 11px;
+  margin-top: -6px;
+}
+.hero-banner-mobile {
+  background: linear-gradient(
+    90deg,
+    rgb(237, 232, 246) 0%,
+    rgb(244, 250, 253) 49.99%,
+    rgb(220, 238, 248) 100%
+  );
+  padding-bottom: 56px;
+}
+.banner-mobile img {
+  width: 100%;
+  object-fit: cover;
+}
+.banner-mobile {
+  margin-bottom: -4px;
+}
+.mobile-banner-row-1 {
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.margin_32-col {
+  margin-top: 32px;
+}
+.azure-preheading {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.96px;
+  color: #17253d;
+  font-family: "Seoge UI-Semibold";
+}
+.azure-banner-heading {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+  letter-spacing: -1.6px;
+  color: #0e1726;
+  margin: 0;
+}
+.azure-banner-content {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.54px;
+  font-weight: 400;
+  margin-top: 16px;
+  padding-right: 16px;
+}
+.banner-buttons {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.button-blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: rgb(0, 120, 212);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+.button-blue span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  padding-bottom: 2px;
+  font-family: "Seoge UI-Semibold";
+}
+.button-green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: rgb(137, 196, 2);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+.button-green span {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  padding-bottom: 2px;
+  font-family: "Seoge UI-Semibold";
+}
+.hero-banner-des {
+  display: none;
+}
+.secondary-nav {
+  background: #fefefe;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px,
+    rgba(0, 0, 0, 0.14) 0px 1.008px 2px 0px;
+}
+.secondary-nav-child {
+  display: flex;
+  align-items: center;
+}
+.secondarynav-child-part-1 {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  width: 100%;
+}
+.dropdown-button {
+  display: flex;
+  box-sizing: border-box;
+  padding: 12px;
+  margin: 4px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #0078d4;
+}
+.dropdown-button-text {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #004275;
+  display: block;
+  font-family: "Seoge UI-Semibold";
+}
+.dropdown-button span {
+  font-size: 22px;
+  margin-top: -8px;
+  color: #004275;
+}
+.try-azure-button {
+  padding: 4px 12px;
+  border: 2px solid transparent;
+  background: #89c402;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  box-sizing: border-box;
+}
+.try-azure-button span {
+  font-size: 15px;
+  line-height: 22px;
+  padding-bottom: 2px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  text-wrap: nowrap;
+}
+.dropdown-button:nth-child(n + 2) {
+  display: none;
+}
+.section-one {
+  padding: 56px 0;
+  background: #f4fafd;
+}
+.section-one-container {
+  padding: 0 16px;
+}
+.section-preheading {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.96px;
+  line-height: 16px;
+  font-family: "Seoge UI-Semibold";
+  color: #17253d;
+}
+.section-heading {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #0e1726;
+  letter-spacing: -1.2px;
+}
+.featured-news-grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 8px;
+  padding: 0 4px;
+
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px,
+    rgba(0, 0, 0, 0.14) 0px 2px 4px 0px;
+  background: #fefefe;
+  height: 100%;
+  border-radius: 16px;
+  border: 1px solid #e6f2fb;
+  box-sizing: border-box;
+}
+
+.featured-news-img img {
+  aspect-ratio: 1.77778;
+  object-fit: fill;
+  max-width: 100%;
+  border-radius: 8px;
+}
+.featured-news-img {
+  overflow: hidden;
+  padding: 8px 8px 0;
+}
+.card-content {
+  padding: 16px;
+}
+.featured-news-card-heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.54px;
+  color: #0e1726;
+}
+.featured-news-card-content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  color: #17253d;
+  margin-top: 12px;
+}
+
+.featured-news-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  gap: 8px;
+}
+.caret-right {
+  padding: 8px;
+  background: #0078d4;
+  height: 35px;
+  width: 35px;
+  box-sizing: border-box;
+  display: inline-flex;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.caret-right span {
+  color: #fff;
+  font-size: 30px;
+  font-weight: lighter;
+  margin-top: -7px;
+}
+.featured-text-button {
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 2px;
+  line-height: 20px;
+  color: #004275;
+}
+.section-two-container{
+  padding: 0 16px;
+}
+.solutions-column{
+  margin-top: 24px;
+}
+.scrollable-container{
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.scroll-item{
+  padding: 8px 16px;
+  border-radius: 200px;
+  margin: 0 8px 0 0;
+  box-sizing: border-box;
+  background: rgb(0 85 151 / 10%);
+}
+.scroll-item span{
+  color: #004275;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  text-wrap: nowrap;
+  padding-bottom: 2px;
+}
+.scroll-item:nth-child(1){
+  background-color: #005597;
+}
+.scroll-item:nth-child(1) span{
+  color: #fff;
+}
+.solution-second-column-heading{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+
+}
+@media screen and (min-width: 540px) {
+  .mobile-banner-row-1 {
+    padding: 0 64px;
+  }
+  .banner-buttons {
+    flex-direction: row;
+  }
+  .section-one-container{
+    padding: 0 64px;
+  }
+}
+
 @media screen and (min-width: 860px) {
   .mobile-nav {
     display: none;
@@ -63,7 +399,14 @@ li {
   .des-nav {
     display: block;
   }
+  .azure-bar {
+    display: none;
+  }
+  .hero-banner-des {
+    display: block;
+  }
   .des-nav-child {
+    margin-top: -2px;
     display: flex;
     padding: 0 24px;
     box-sizing: border-box;
@@ -77,7 +420,6 @@ li {
     width: 15px;
   }
   .des-nav-logo {
-    margin-top: -3px;
     width: 137px;
     padding: 16px 6px 16px 10px;
     box-sizing: border-box;
@@ -86,8 +428,9 @@ li {
     width: 108px;
   }
   .des-nav-name {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 600;
+    font-family: "Seoge UI-Semibold";
     margin-top: -3px;
     padding: 16px 6px 16px 10px;
     display: flex;
@@ -103,40 +446,41 @@ li {
     border-left: 2px solid #000;
     height: 24px;
     margin-left: 7px;
-    margin-top: -5px;
+    margin-top: -1px;
     display: block;
   }
   .des-nav-text {
     display: flex;
     align-items: center;
-    padding: 16px 6px;
+    padding: 16px 17px 16px 15px;
+    margin-right: -10px;
+    margin-top: -2px;
     font-size: 13px;
     font-weight: 400;
-    gap: 5px;
+    gap: 6px;
   }
   .des-nav-text span {
     font-size: 16px;
     font-weight: 500;
     margin-top: -5px;
   }
-  .des-nav-text:nth-child(1) {
-    margin-left: 10px;
-  }
+
   .des-nav-part-3 {
     position: absolute;
     right: 30px;
     display: flex;
   }
   .search-icon img {
-    height: 16px;
+    height: 18px;
     width: 16px;
   }
   .search-icon {
+    margin-top: 2px;
     width: 36px;
     height: 56px;
     display: inline-flex;
     align-items: center;
-    justify-content: content;
+    justify-content: center;
   }
   .des-nav-part-3-two {
     display: flex;
@@ -148,14 +492,17 @@ li {
     color: #fff;
     height: 31px;
     margin: 11px 8px;
-    padding: 0 8px;
+    padding: 0 10px;
     box-sizing: border-box;
     border-radius: 3px;
   }
   .des-nav-get-button span {
+    margin-bottom: 3px;
+
     font-size: 13px;
   }
   .des-nav-sign-button span {
+    margin-bottom: 3px;
     font-size: 13px;
   }
   .des-nav-sign-button {
@@ -173,6 +520,99 @@ li {
   .des-nav-part-3-two {
     display: none;
   }
+  .des-nav-text:last-child {
+    display: none;
+  }
+  .search-icon span {
+    display: none;
+  }
+
+  /* nav ends here  */
+
+  .hero-banner-mobile {
+    display: none;
+  }
+  .hero-banner-des-child {
+    background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-hero-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=1264&qlt=100&fit=constrain);
+    box-sizing: border-box;
+    padding: 96px 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .des-banner-layout {
+    display: flex;
+    align-items: center;
+    min-height: 388px;
+  }
+  .des-banner-layout-col-2 {
+    flex: 1;
+  }
+  .des-banner-layout-col-1 {
+    flex: 1;
+  }
+  .margin_32-col {
+    margin: 0;
+  }
+  .azure-banner-heading {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2px;
+  }
+  .azure-banner-content {
+    margin-top: 24px;
+    padding-right: 48px;
+  }
+  .banner-buttons {
+    margin-top: 32px;
+  }
+  .button-blue {
+    padding: 12px 16px;
+  }
+  .button-green {
+    padding: 12px 16px;
+  }
+  .des-banner-container {
+    height: 436px;
+  }
+  .container {
+    padding: 0 56px;
+  }
+  .dropdown-button:nth-child(n + 2) {
+    display: block;
+  }
+  .dropdown-button {
+    margin: 0;
+    border-bottom: none;
+    width: fit-content;
+    padding: 0;
+  }
+  .dropdown-button-text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.48px;
+    padding-bottom: 16px;
+    margin-top: 16px;
+  }
+  .dropdown-button span {
+    display: none;
+  }
+  .secondary-nav-child {
+    justify-content: space-between;
+  }
+  .secondarynav-child-part-1 {
+    flex-wrap: wrap;
+    row-gap: 0px;
+  }
+  .featured-news-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+  }
+  .section-one{
+    padding: 96px 0;
+  }
 }
 @media screen and (min-width: 1084px) {
   .des-nav-text:nth-child(n + 2) {
@@ -184,38 +624,75 @@ li {
   .des-nav-text-2 {
     display: flex;
     align-items: center;
-    padding: 16px 8px;
+    padding: 16px 17px 16px 15px;
+    margin-right: -14px;
+    margin-top: -4px;
     font-size: 13px;
     font-weight: 400;
   }
+  .des-nav-text-2:nth-child(3) {
+    margin-right: -10px;
+  }
+  .search-icon {
+    padding-right: 10px;
+  }
   .des-nav-part-3-two {
     display: flex;
+    margin-top: 3px;
   }
   .des-nav-child {
     padding: 0 5%;
   }
   .des-nav-part-3 {
-    right: 5%;
+    right: 5.2%;
   }
 }
 @media screen and (min-width: 1108px) {
   .des-nav-text:nth-child(2) {
     display: flex;
   }
+  .des-nav-text:last-child {
+    margin-left: -4px;
+  }
 }
 @media screen and (min-width: 1205px) {
   .des-nav-text:nth-child(3) {
+    margin-left: -4px;
     display: flex;
   }
 }
 @media screen and (min-width: 1286px) {
   .des-nav-text:nth-child(4) {
+    margin-left: -4px;
     display: flex;
   }
 }
 @media screen and (min-width: 1376px) {
   .des-nav-text:nth-child(5) {
+    margin-left: -4px;
     display: flex;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1328px;
+    padding: 0 5%;
+    margin: 0 auto;
+    box-sizing: content-box;
+  }
+
+  .azure-banner-heading {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -2.4px;
+  }
+  .azure-banner-content {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+  }
+  .azure-preheading {
+    margin-bottom: 16px;
   }
 }
 @media screen and (min-width: 1460px) {
@@ -224,5 +701,16 @@ li {
   }
   .des-nav-text:last-child {
     display: none;
+  }
+  .search-icon {
+    width: 78px;
+    margin-right: 12px;
+  }
+  .search-icon span {
+    display: block;
+    padding-right: 20px;
+  }
+  .des-nav-part-3 {
+    right: 5%;
   }
 }
