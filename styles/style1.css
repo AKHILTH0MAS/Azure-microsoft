@@ -17,7 +17,9 @@ p {
   margin: 0;
   font-family: "Seoge UI";
 }
-
+* {
+  box-sizing: border-box;
+}
 .mobile-nav-child {
   display: flex;
   align-items: center;
@@ -140,6 +142,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding-bottom: 8px;
 }
 .button-blue {
   display: flex;
@@ -197,10 +200,13 @@ p {
   align-items: center;
   width: 100%;
 }
+.container {
+  padding: 0 16px;
+}
 .dropdown-button {
   display: flex;
   box-sizing: border-box;
-  padding: 12px;
+  padding: 11px 12px;
   margin: 4px;
   width: 100%;
   justify-content: space-between;
@@ -251,7 +257,7 @@ p {
 .section-preheading {
   font-size: 12px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   letter-spacing: 0.96px;
   line-height: 16px;
   font-family: "Seoge UI-Semibold";
@@ -269,8 +275,7 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 8px;
-  padding: 0 4px;
-
+  padding: 0 4px 0 0;
 }
 .card {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px,
@@ -298,8 +303,9 @@ p {
 .featured-news-card-heading {
   font-size: 18px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 24px;
   letter-spacing: -0.54px;
+  font-family: "Seoge UI-Semibold";
   color: #0e1726;
 }
 .featured-news-card-content {
@@ -339,27 +345,29 @@ p {
   font-weight: 600;
   padding-bottom: 2px;
   line-height: 20px;
+  letter-spacing: -0.48px;
   color: #004275;
+  font-family: "Seoge UI-Semibold";
 }
-.section-two-container{
+.section-two-container {
   padding: 0 16px;
 }
-.solutions-column{
+.solutions-column {
   margin-top: 24px;
 }
-.scrollable-container{
+.scrollable-container {
   display: flex;
   overflow-x: scroll;
   scrollbar-width: none;
 }
-.scroll-item{
+.scroll-item {
   padding: 8px 16px;
   border-radius: 200px;
   margin: 0 8px 0 0;
   box-sizing: border-box;
   background: rgb(0 85 151 / 10%);
 }
-.scroll-item span{
+.scroll-item span {
   color: #004275;
   font-size: 15px;
   font-weight: 600;
@@ -368,17 +376,338 @@ p {
   text-wrap: nowrap;
   padding-bottom: 2px;
 }
-.scroll-item:nth-child(1){
+.scroll-item:nth-child(1) {
   background-color: #005597;
 }
-.scroll-item:nth-child(1) span{
+.scroll-item:nth-child(1) span {
   color: #fff;
 }
-.solution-second-column-heading{
+.solution-second-column-heading {
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
+  padding-bottom: 24px;
+}
+.solution-second-column-content {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  font-weight: 400;
+  color: #002948;
+  margin-bottom: 24px;
+}
+.explore-azure-link {
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 2px;
+  line-height: 20px;
+  font-family: "Seoge UI-Semibold";
+  color: #004275;
+  text-decoration: underline;
+  margin-bottom: 24px;
+}
 
+.video-preview-img {
+  position: relative;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+.video-preview-img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 3/2;
+  border-radius: 16px;
+}
+.play-button {
+  position: absolute;
+  padding: 14px;
+  background-color: #0078d4;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-button img {
+  width: 20px;
+  height: 20px;
+}
+.solutions-dropdown-item {
+  font-family: "Seoge UI-Semibold";
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid #bdc5d2;
+}
+.solutions-columns {
+  margin-top: 24px;
+}
+.solutions-dropdown-item span {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.54px;
+}
+.solutions-dropdown-item:nth-child(1) {
+  display: none;
+}
+.solutions-dropdown-item:nth-child(2) {
+  border-top: 1px solid #bdc5d2;
+}
+.section-two {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/solution-background_mobile-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=720&hei=1990&qlt=100&fmt=png-alpha&fit=constrain);
+}
+.section-three-container {
+  padding: 56px 16px;
+  background: #f4fafd;
+}
+.products-services-column {
+  margin-top: 24px;
+}
+.product-service-img img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  border-radius: 16px;
+}
+.product-service-img {
+  position: relative;
+  border-radius: 16px;
+}
+.product-service-row-1 {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.product-grid-content {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(
+    rgba(4, 13, 18, 0) 0%,
+    rgba(4, 13, 18, 0.8) 93.59%
+  );
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.product-service-column-heading {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -1.2px;
+  color: #fff;
+}
+.product-service-column-content {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.48px;
+  line-height: 24px;
+  color: #fff;
+}
+.product-grid-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-end;
+}
+.product-service-column-button {
+  background: #b3daf0;
+  padding: 12px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+.product-service-column-button span {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  color: #0e1726;
+}
+.product-service-grid {
+  display: grid;
+  margin-top: 12px;
+  row-gap: 12px;
+  grid-template-columns: 1fr;
+}
+.product-service-grid-item {
+  padding: 16px;
+  box-sizing: border-box;
+}
+.product-service-item-img {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.product-service-item-img img {
+  width: 24px;
+  height: 24px;
+}
+.product-grid-item-heading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  margin-bottom: 12px;
+}
+.product-grid-item-content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  margin-bottom: 12px;
+}
+.product-grid-item-link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.48px;
+  padding-bottom: 2px;
+  text-decoration: underline;
+  color: #004275;
+}
+.gartnerimg {
+  padding: 8px 8px 0;
+}
+.gartnerimg img {
+  width: 100%;
+  border-radius: 8px;
+}
+.gartner-content-heading {
+  margin-top: 32px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  line-height: 32px;
+}
+.gartner-contents-content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  margin-top: 12px;
+}
+.gartner-button {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background: #0078d4;
+  width: fit-content;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+.gartner-button span {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  line-height: 22px;
+  padding-bottom: 2px;
+  color: #fff;
+}
+.gartner-contents {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.resources-preheading {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.96px;
+  margin-bottom: 12px;
+  padding-top: 48px;
+  text-align: center;
+  font-family: "Seoge UI-Semibold";
+  line-height: 16px;
+}
+.resources-heading {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -1.4px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.resources-scrollable-container-parent {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  padding: 8px 0 8px 8px;
+}
+.resources-scrollable-container {
+  display: flex;
+  width: 1328px;
+}
+.resource-scroll-item-text span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  text-wrap: nowrap;
+}
+.resource-scroll-item {
+  width: 220px;
+  border: 1px solid #bdc5d2;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px,
+    rgba(0, 0, 0, 0.14) 0px 1.008px 2px 0px;
+  background-color: #fff;
+}
+.resource-scroll-item-text {
+  padding: 12px 16px 16px;
+  border: none;
+  background-color: #fff;
+  width: 100%;
+}
+.products-services-column {
+  padding-right: 4px;
+}
+.section-four-container {
+  background-color: #f4fafd;
+}
+
+.resource-scroll-item:nth-child(1) {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #bdc5d2;
+  border-bottom: 4px solid #0078d4;
+}
+.section-five-container {
+  background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Mobile-Interactive-Demo-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=720&hei=1390&qlt=100&fmt=png-alpha&fit=constrain);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.resourse-by-role-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+.resourse-by-role-img {
+  padding: 16px;
+  margin-top: 24px;
+}
+.resourse-by-role-button {
+  justify-content: center;
+  margin-top: 12px;
+}
+.resource-by-role-heading {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 28px;
+  text-align: center;
+}
+.resource-by-role-column {
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+.section-six-container {
+  background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-AzureRegions-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=983&qlt=95&fmt=png-alpha&fit=constrain);
 }
 @media screen and (min-width: 540px) {
   .mobile-banner-row-1 {
@@ -387,8 +716,19 @@ p {
   .banner-buttons {
     flex-direction: row;
   }
-  .section-one-container{
+  .section-one-container {
     padding: 0 64px;
+  }
+  .featured-news-card-content {
+    padding-right: 24px;
+  }
+  .container {
+    padding: 0 64px;
+  }
+  .section-five-container {
+    background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-Interactive-Demo-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=1968&qlt=100&fmt=png-alpha&fit=constrain);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -609,11 +949,120 @@ p {
   .featured-news-grid {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
+    margin-top: 48px;
   }
-  .section-one{
+  .card-content {
+    padding: 24px;
+  }
+  .featured-news-buttons {
+    margin-top: 48px;
+  }
+  .section-one {
     padding: 96px 0;
   }
+  .solutions-columns {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .solution-second-column-top {
+    display: none;
+  }
+  .video-preview {
+    flex: 2;
+  }
+  .video-preview-img {
+    width: 80%;
+  }
+  .video-preview-img-parent {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .video-preview-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .solutions-dropdowns {
+    flex: 1;
+  }
+  .solutions-dropdown-item:nth-child(1) {
+    display: block;
+  }
+  .solutions-dropdown-item:nth-child(1) {
+    display: block;
+    border-top: 1px solid #bdc5d2;
+  }
+  .solutions-dropdown-item:nth-child(2) {
+    border-top: none;
+  }
+  .section-two {
+    background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/solution-background_desktop-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=980&qlt=100&fmt=png-alpha&fit=constrain);
+    background-size: cover;
+  }
+  .section-three-container {
+    padding: 96px 0;
+  }
+  .product-service-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+    margin-top: 16px;
+  }
+  .product-service-grid-item {
+    padding: 24px;
+  }
+  .product-service-item-img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+  .products-services-column {
+    padding-right: 8px;
+  }
+  .product-service-item-img img {
+    width: 32px;
+    height: 32px;
+  }
+  .product-grid-item-heading {
+    margin-bottom: 16px;
+  }
+  .product-grid-item-content {
+    margin-bottom: 16px;
+  }
+  .product-service-column-button {
+    width: fit-content;
+    padding: 12px 16px;
+  }
+  .product-grid-content {
+    padding: 24px;
+  }
+
+  .gartner-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .gartner-contents {
+    max-width: 50%;
+    padding: 24px 56px 24px 24px;
+    box-sizing: border-box;
+  }
+  .gartnerimg img {
+    height: 99%;
+    aspect-ratio: 1.33333;
+  }
+  .section-four-container {
+    padding: 72px 0;
+  }
+  .section-five-container {
+    background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-Interactive-Demo-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=1968&qlt=100&fmt=png-alpha&fit=constrain);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
+
+/* 860 end  */
 @media screen and (min-width: 1084px) {
   .des-nav-text:nth-child(n + 2) {
     display: none;
@@ -693,6 +1142,42 @@ p {
   }
   .azure-preheading {
     margin-bottom: 16px;
+  }
+  .section-heading {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1.6px;
+  }
+  .section-preheading {
+    margin-bottom: 8px;
+  }
+  .featured-news-card-heading {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.6px;
+  }
+  .products-services-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+  }
+  .product-service-grid {
+    grid-column: 2/5;
+  }
+  .product-service-img {
+    margin-top: 14px;
+    height: 100%;
+  }
+  .product-grid-content {
+    padding-bottom: 32px;
+  }
+  .product-service-img img {
+    height: 100%;
+    aspect-ratio: 1.2;
+    object-fit: cover;
+  }
+  .gartner-contents {
+    padding: 24px 72px 24px 24px;
   }
 }
 @media screen and (min-width: 1460px) {
