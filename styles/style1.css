@@ -408,7 +408,8 @@ p {
   position: relative;
   padding-bottom: 24px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 .video-preview-img img {
   width: 100%;
