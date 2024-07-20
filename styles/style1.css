@@ -1003,6 +1003,7 @@ p {
 }
 footer {
   padding-bottom: 30px;
+  background: #f2f2f2;
 }
 @media screen and (min-width: 540px) {
   .mobile-banner-row-1 {
