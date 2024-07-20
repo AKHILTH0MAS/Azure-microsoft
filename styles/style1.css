@@ -758,9 +758,28 @@ p {
 .customer-column{
   margin-top: 24px;
 }
+.customer-scrollable-container-parent{
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scrollbar-color: transparent;
+  scroll-snap-type: x mandatory;
+}
+
+.customer-scrollable-container{
+  display: grid;
+  width: 400%;
+  column-gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+.customer-scrollable-item{
+  max-width: calc(100vw - 16px);
+  scroll-snap-align: center;
+}
 .customer-grid {
   display: flex;
   flex-direction: column-reverse;
+  width: 100%;
 }
 .customer-grid-img img {
   width: 100%;
@@ -803,6 +822,7 @@ p {
   align-items: center;
   gap: 12px;
   margin-top: 8px;
+  flex-wrap: wrap;
 }
 
 .product {
