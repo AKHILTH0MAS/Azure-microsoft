@@ -25,19 +25,16 @@ p {
   align-items: center;
   padding-top: 2px;
 }
-.menu-button img {
-  width: 20px;
-  height: 20px;
-}
 .menu-button {
-  padding: 6px 0 8px;
-  margin: 1px;
   height: 48px;
-  width: 48px;
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
   align-items: center;
-  box-sizing: border-box;
+}
+.menu-line {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 4px 14px;
 }
 .search-icon img {
   width: 16px;
@@ -671,7 +668,9 @@ p {
 .section-four-container {
   background-color: #f4fafd;
 }
-
+.section-seven-container {
+  background-color: #f4fafd;
+}
 .resource-scroll-item:nth-child(1) {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -708,6 +707,293 @@ p {
 }
 .section-six-container {
   background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-AzureRegions-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=983&qlt=95&fmt=png-alpha&fit=constrain);
+  background-position: center;
+  background-size: cover;
+  padding: 56px 0;
+}
+.azure-global-column {
+  padding-right: 4px;
+}
+.azure-global-heading {
+  color: #f4fafd;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: -1.6px;
+  line-height: 40px;
+  text-align: center;
+  font-family: "Seoge UI-Semibold";
+}
+.azure-global-contents {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.54px;
+  padding: 0 16px;
+  text-align: center;
+  color: #f4fafd;
+  margin-top: 16px;
+}
+.azure-global-button span {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  padding-bottom: 2px;
+  color: #0e1726;
+}
+.azure-global-button {
+  padding: 12px;
+  margin-top: 24px;
+  width: 100%;
+  background: #b3daf0;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  text-align: center;
+}
+.customer-grid {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.customer-grid-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+.customer-grid-img {
+  padding: 8px 8px 0;
+}
+.customer-item-flex {
+  padding: 16px;
+}
+.customer-logo img {
+  border: 1px solid #bdc5d2;
+  border-radius: 8px;
+}
+.customer-text {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 28px;
+  text-align: left;
+  margin-top: 12px;
+}
+.cutomer-product-heading {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.48px;
+  line-height: 24px;
+  padding-top: 8px;
+}
+.customer-flex-item-2 {
+  margin-top: 24px;
+  height: 100%;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.products {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.product span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.48px;
+  text-decoration: underline;
+  color: #0067b8;
+}
+.case-study-button span {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  line-height: 22px;
+  overflow-wrap: break-word;
+  padding-bottom: 2px;
+  color: #fff;
+  text-align: center;
+}
+.case-study-button {
+  background: #0078d4;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
+  margin-top: 24px;
+  text-align: center;
+}
+.section-seven-container {
+  padding: 48px 0;
+}
+.arrow-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+}
+.arrow-button img {
+  height: 20px;
+  width: 20px;
+}
+.arrow-button {
+  padding: 12px 14px 12px 14px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+.customer-section-nav {
+  display: none;
+}
+.next-step-card-item-contents {
+  padding: 16px;
+}
+.next-step-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.54px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  font-family: "Seoge UI-Semibold";
+}
+.next-step-card-content {
+  font-size: 16px;
+  font-weight: 400;
+  height: 48px;
+  letter-spacing: -0.48px;
+  line-height: 24px;
+}
+.next-step-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 8px;
+}
+.next-step-column {
+  margin-top: 32px;
+}
+.next-step-heading {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -1.4px;
+  line-height: 36px;
+  display: block;
+  text-align: center;
+}
+.section-final-container {
+  padding: 56px 0;
+  background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Mobile-3up-icon-card-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=720&hei=1648&qlt=100&fmt=png-alpha&fit=constrain);
+  background-size: cover;
+}
+.section-pre-footer {
+  padding: 24px 0;
+}
+.get-azure-button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.get-azure-button span {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+.azure-mobile-app {
+  box-sizing: border-box;
+  width: fit-content;
+}
+.get-azure-button {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 8px 0;
+  width: max-content;
+  box-sizing: border-box;
+  background: #e6e6e6;
+}
+.social-icon img {
+  width: 24px;
+  height: 24px;
+}
+.social-icon {
+  height: 24px;
+}
+.social-icons {
+  margin: 8px 0;
+  display: flex;
+  gap: 8px;
+  margin-left: 12px;
+}
+.social-flex {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+}
+.col-12-width {
+  height: 12px;
+  padding: 12px;
+}
+.footer-container {
+  padding: 0 12px;
+  background: #f2f2f2;
+}
+.footer-grid-item {
+  padding: 0 12px;
+}
+.footer-item-heading {
+  padding: 36px 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #616161;
+}
+.footer-item-content {
+  padding: 8px 0;
+  font-size: 11px;
+  line-height: 16px;
+  color: #616161;
+}
+.footer-final-column {
+  padding: 30px 12px 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footer-final-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.footer-final-item span {
+  font-size: 11px;
+  line-height: 16px;
+  color: #616161;
+}
+.footer-final-item {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+  flex-wrap: wrap;
+}
+.footer-svg {
+  margin: 8px 0 16px;
+  padding: 4px 24px 0 0;
+}
+.footer-svg span {
+  margin-right: 5px;
+}
+.footer-spans span {
+  padding: 6px 10px 0 0;
+}
+.footer-spans {
+  margin: 12px 0 3px;
+}
+footer {
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 540px) {
   .mobile-banner-row-1 {
@@ -729,6 +1015,17 @@ p {
     background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-Interactive-Demo-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=1968&qlt=100&fmt=png-alpha&fit=constrain);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .auzre-global-button-parent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .azure-global-button {
+    width: fit-content;
+  }
+  footer {
+    padding: 0;
   }
 }
 
@@ -1060,8 +1357,156 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
   }
-}
+  .azure-global-column {
+    padding-right: 8px;
+  }
+  .section-six-container {
+    padding: 96px 0;
+  }
+  .azure-global-heading {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    font-weight: 400;
+  }
+  .azure-global-contents {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.54px;
+    line-height: 28px;
+    padding: 0 48px;
+    margin-top: 24px;
+  }
+  .resourse-by-role-img {
+    width: 66.6%;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  .resource-by-role-column {
+    padding: 32px 0 72px;
+  }
+  .auzre-global-button {
+    margin-top: 32px;
+  }
+  .customer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .customer-item-flex {
+    padding: 24px;
+  }
+  .customer-flex-item-2 {
+    margin-top: 32px;
+  }
+  .products {
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: start;
+  }
+  .case-study-button {
+    margin-top: 32px;
+    width: fit-content;
+  }
+  .customer-grid-img {
+    height: 100%;
+    padding: 8px 8px 8px 0;
+  }
+  .customer-grid-img img {
+    height: 100%;
+    object-fit: cover;
+  }
 
+  .section-seven-container {
+    padding: 72px 0;
+  }
+  .customer-item-flex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .arrow-buttons {
+    display: none;
+  }
+  .customer-section-nav {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .customer-section-item img {
+    width: 100%;
+  }
+  .customer-section-item {
+    padding: 16px;
+    border: 1px solid #bdc5d2;
+    background-color: #fff;
+    width: 200px;
+  }
+  .customer-section-item:nth-child(1) {
+    border-bottom: 4px solid #005597;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .customer-section-item:nth-child(5) {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .next-step-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+  }
+  .next-step-card-item-contents {
+    padding: 24px;
+    height: 100%;
+  }
+  .next-step-card-title {
+    padding-right: 32px;
+    margin-bottom: 16px;
+  }
+  .next-step-card-content {
+    padding-right: 32px;
+    height: fit-content;
+  }
+  .next-step-card-item-contents .featured-news-buttons {
+    margin-top: 48px;
+  }
+  .next-step-card-item-flex {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .section-final-container {
+    background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-3up-icon-card-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=1024&qlt=100&fmt=png-alpha&fit=constrain);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .col-12-width {
+    display: none;
+  }
+  .section-pre-footer {
+    padding: 24px 0;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer-spans {
+    justify-content: flex-end;
+  }
+  .footer-spans span {
+    padding: 0 24px 4px 0;
+  }
+  .footer-final-column {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-final-column-part-1 {
+    display: flex;
+  }
+}
 /* 860 end  */
 @media screen and (min-width: 1084px) {
   .des-nav-text:nth-child(n + 2) {
@@ -1094,6 +1539,15 @@ p {
   }
   .des-nav-part-3 {
     right: 5.2%;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .footer-container {
+    padding: 0 5%;
+  }
+  .footer-grid-item:nth-child(1) {
+    padding: 0 12px 0 0;
   }
 }
 @media screen and (min-width: 1108px) {
@@ -1178,6 +1632,27 @@ p {
   }
   .gartner-contents {
     padding: 24px 72px 24px 24px;
+  }
+  .customer-text {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -1.2px;
+    margin-top: 16px;
+  }
+  .customer-item-flex {
+    padding: 24px 72px 24px 24px;
+  }
+  .next-step-card-title {
+    font-size: 20px;
+  }
+  .next-step-heading{
+    font-size: 40px;
+  }
+  .next-step-column{
+    margin-top: 48px;
+  }
+  .section-final-container{
+    padding: 96px 0;
   }
 }
 @media screen and (min-width: 1460px) {
