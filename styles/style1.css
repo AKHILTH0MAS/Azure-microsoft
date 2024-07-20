@@ -186,6 +186,9 @@ p {
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px,
     rgba(0, 0, 0, 0.14) 0px 1.008px 2px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 .secondary-nav-child {
   display: flex;
@@ -690,6 +693,8 @@ p {
 .resourse-by-role-img {
   padding: 16px;
   margin-top: 24px;
+  background: rgb(255 255 255 / 10%);
+  border-radius: 8px;
 }
 .resourse-by-role-button {
   justify-content: center;
@@ -749,6 +754,9 @@ p {
   border-radius: 8px;
   border: 2px solid transparent;
   text-align: center;
+}
+.customer-column{
+  margin-top: 24px;
 }
 .customer-grid {
   display: flex;
@@ -1237,6 +1245,7 @@ footer {
   .dropdown-button span {
     display: none;
   }
+
   .secondary-nav-child {
     justify-content: space-between;
   }
@@ -1506,6 +1515,9 @@ footer {
   }
   .footer-final-column-part-1 {
     display: flex;
+  }
+  .customer-column{
+    margin-top: 32px;
   }
 }
 /* 860 end  */
