@@ -443,7 +443,6 @@ p {
   height: 20px;
 }
 .solutions-dropdown-item {
-  margin-left: 48px;
   font-family: "Seoge UI-Semibold";
 
   padding: 24px 0;
@@ -458,7 +457,7 @@ p {
   line-height: 24px;
   letter-spacing: -0.54px;
 }
-.solutions-dropdown-item:nth-child(1) {
+.solutions-item-first-child {
   display: none;
 }
 .solutions-dropdown-item:nth-child(2) {
@@ -1329,6 +1328,10 @@ footer {
     max-height: 492px;
     overflow-y: scroll;
     scrollbar-width: none;
+  }
+  .solutions-dropdown-item{
+  margin-left: 48px;
+
   }
   .solutions-dropdown-item:nth-child(1) {
     display: block;
