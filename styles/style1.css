@@ -445,7 +445,7 @@ p {
 .solutions-dropdown-item {
   margin-left: 48px;
   font-family: "Seoge UI-Semibold";
-  display: flex;
+
   padding: 24px 0;
   border-bottom: 1px solid #bdc5d2;
 }
@@ -465,10 +465,10 @@ p {
   border-top: 1px solid #bdc5d2;
 }
 .section-two {
+  background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/solution-background_mobile-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=720&hei=1990&qlt=100&fmt=png-alpha&fit=constrain);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/solution-background_mobile-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=720&hei=1990&qlt=100&fmt=png-alpha&fit=constrain);
 }
 .section-three-container {
   padding: 56px 16px;
