@@ -186,9 +186,9 @@ p {
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px 0px,
     rgba(0, 0, 0, 0.14) 0px 1.008px 2px 0px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .secondary-nav-child {
   display: flex;
@@ -241,6 +241,7 @@ p {
   line-height: 22px;
   padding-bottom: 2px;
   font-weight: 600;
+  font-family: "Seoge UI-Semibold";
   letter-spacing: -0.3px;
   text-wrap: nowrap;
 }
@@ -355,6 +356,9 @@ p {
 .solutions-column {
   margin-top: 24px;
 }
+.solutions-columns {
+  margin-top: 32px;
+}
 .scrollable-container {
   display: flex;
   overflow-x: scroll;
@@ -369,6 +373,7 @@ p {
 }
 .scroll-item span {
   color: #004275;
+  font-family: "Seoge UI-Semibold";
   font-size: 15px;
   font-weight: 600;
   line-height: 22px;
@@ -438,9 +443,9 @@ p {
   height: 20px;
 }
 .solutions-dropdown-item {
+  margin-left: 48px;
   font-family: "Seoge UI-Semibold";
   display: flex;
-  justify-content: space-between;
   padding: 24px 0;
   border-bottom: 1px solid #bdc5d2;
 }
@@ -755,24 +760,23 @@ p {
   border: 2px solid transparent;
   text-align: center;
 }
-.customer-column{
+.customer-column {
   margin-top: 24px;
 }
-.customer-scrollable-container-parent{
+.customer-scrollable-container-parent {
   overflow-x: scroll;
   scrollbar-width: none;
   scrollbar-color: transparent;
   scroll-snap-type: x mandatory;
 }
 
-.customer-scrollable-container{
+.customer-scrollable-container {
   display: grid;
   width: 400%;
   column-gap: 16px;
   grid-template-columns: repeat(4, 1fr);
-  
 }
-.customer-scrollable-item{
+.customer-scrollable-item {
   max-width: calc(100vw - 16px);
   scroll-snap-align: center;
 }
@@ -1202,7 +1206,7 @@ footer {
   .hero-banner-des-child {
     background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-hero-BG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3200&hei=1264&qlt=100&fit=constrain);
     box-sizing: border-box;
-    padding: 96px 0;
+    padding: 99px 0 96px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1229,7 +1233,7 @@ footer {
   }
   .azure-banner-content {
     margin-top: 24px;
-    padding-right: 48px;
+    padding-right: 60px;
   }
   .banner-buttons {
     margin-top: 32px;
@@ -1249,11 +1253,16 @@ footer {
   .dropdown-button:nth-child(n + 2) {
     display: block;
   }
+  .dropdown-button:nth-child(1) {
+    padding-left: 4px;
+    border-bottom: 4px solid #0078d4;
+  }
   .dropdown-button {
     margin: 0;
     border-bottom: none;
     width: fit-content;
     padding: 0;
+    border-bottom: 4px solid transparent;
   }
   .dropdown-button-text {
     font-size: 14px;
@@ -1266,7 +1275,9 @@ footer {
   .dropdown-button span {
     display: none;
   }
-
+  .secondary-nav {
+    margin-top: -4px;
+  }
   .secondary-nav-child {
     justify-content: space-between;
   }
@@ -1291,29 +1302,32 @@ footer {
   .solutions-columns {
     margin-top: 24px;
     display: flex;
-    flex-direction: row-reverse;
+    position: relative;
   }
   .solution-second-column-top {
     display: none;
   }
-  .video-preview {
-    flex: 2;
-  }
-  .video-preview-img {
-    width: 80%;
-  }
+
   .video-preview-img-parent {
     display: flex;
-    align-items: center;
     justify-content: end;
   }
+  .video-preview {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
   .video-preview-img {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .solutions-dropdowns {
-    flex: 1;
+    flex-basis: calc(33% - 8px);
+    max-height: 492px;
+    overflow-y: scroll;
+    scrollbar-width: none;
   }
   .solutions-dropdown-item:nth-child(1) {
     display: block;
@@ -1324,6 +1338,18 @@ footer {
   }
   .solutions-dropdown-item:nth-child(2) {
     border-top: none;
+  }
+  .solutions-dropdown-item{
+    display: block;
+  }
+  .solutions-item-first-child{
+    display: flex;
+  }
+  .solutions-item-indicator{
+    width: 4px;
+    height: 190px;
+    background-color: #0078d4;
+    display: block;
   }
   .section-two {
     background: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/solution-background_desktop-2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=980&qlt=100&fmt=png-alpha&fit=constrain);
@@ -1537,7 +1563,7 @@ footer {
   .footer-final-column-part-1 {
     display: flex;
   }
-  .customer-column{
+  .customer-column {
     margin-top: 32px;
   }
 }
@@ -1644,6 +1670,27 @@ footer {
     line-height: 28px;
     letter-spacing: -0.6px;
   }
+  .featured-news-card-content {
+    margin-top: 16px;
+  }
+  .featured-news-img img {
+    border-radius: 16px;
+  }
+  .featured-news-grid {
+    padding-right: 8px;
+  }
+  .card {
+    border-radius: 24px;
+  }
+  .solutions-column {
+    margin-top: 32px;
+  }
+  .scroll-item {
+    padding: 8px 24px;
+  }
+  .scroll-item span {
+    line-height: 24px;
+  }
   .products-services-column {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1652,6 +1699,7 @@ footer {
   .product-service-grid {
     grid-column: 2/5;
   }
+
   .product-service-img {
     margin-top: 14px;
     height: 100%;
@@ -1679,13 +1727,13 @@ footer {
   .next-step-card-title {
     font-size: 20px;
   }
-  .next-step-heading{
+  .next-step-heading {
     font-size: 40px;
   }
-  .next-step-column{
+  .next-step-column {
     margin-top: 48px;
   }
-  .section-final-container{
+  .section-final-container {
     padding: 96px 0;
   }
 }
